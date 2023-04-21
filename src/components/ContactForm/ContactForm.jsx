@@ -3,7 +3,7 @@ import { Formik } from 'formik';
 import { Field, Form, Label, SubmitBtn } from './ContactForm.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from 'redux/contacts/operations';
-import { getContacts } from 'redux/selectors';
+import { getContacts } from 'redux/contacts/selectors';
 import { toast } from 'react-toastify';
 
 const initialValues = {

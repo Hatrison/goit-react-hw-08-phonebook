@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import { getError, getIsLoading } from 'redux/selectors';
+import { getError, getIsLoading } from 'redux/contacts/selectors';
 import ContactForm from 'components/ContactForm';
 import ContactList from 'components/ContactList';
 import { Header, SectionHeader } from 'components/App.styled';
