@@ -1,13 +1,20 @@
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { getError, getIsLoading } from 'redux/contacts/selectors';
 import ContactForm from 'components/ContactForm';
 import ContactList from 'components/ContactList';
 import { Header, SectionHeader } from 'components/App.styled';
 import Filter from 'components/Filter';
+import { useEffect } from 'react';
+import { fetchContacts } from 'redux/contacts/operations';
 
 export const Contacts = () => {
   const isLoading = useSelector(getIsLoading);
   const error = useSelector(getError);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchContacts());
+  }, [dispatch]);
 
   return (
     <div>

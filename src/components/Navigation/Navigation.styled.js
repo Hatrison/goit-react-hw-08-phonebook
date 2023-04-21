@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 import { NavLink as NavLinkReact } from 'react-router-dom';
 
+export const Container = styled.nav`
+  display: flex;
+`;
+
 export const NavLink = styled(NavLinkReact)`
   color: black;
   text-decoration: none;
