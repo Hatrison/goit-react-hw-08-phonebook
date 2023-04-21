@@ -2,11 +2,6 @@ import { createGlobalStyle } from 'styled-components';
 import 'modern-normalize';
 
 export const GlobalStyle = createGlobalStyle`
-  * {
-    margin: 0;
-    padding: 0;
-  }
-
   body {
     font-size: 20px;
     font-weight: 400;
