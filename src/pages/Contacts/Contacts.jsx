@@ -7,7 +7,7 @@ import Filter from 'components/Filter';
 import { useEffect } from 'react';
 import { fetchContacts } from 'redux/contacts/operations';
 
-export const Contacts = () => {
+const Contacts = () => {
   const isLoading = useSelector(getIsLoading);
   const error = useSelector(getError);
   const dispatch = useDispatch();
@@ -27,3 +27,5 @@ export const Contacts = () => {
     </div>
   );
 };
+
+export default Contacts;

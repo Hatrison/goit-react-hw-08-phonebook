@@ -1,9 +1,11 @@
 import { Container } from './Home.styled';
 
-export const Home = () => {
+const Home = () => {
   return (
     <Container>
       <b>Welcome to my contact book app!🙋‍♂️</b>
     </Container>
   );
 };
+
+export default Home;
